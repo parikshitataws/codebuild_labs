@@ -11,5 +11,5 @@ phases:
       - make -f lab_01/Makefile
 artifacts:
   files:
-    - hello
+    - lab_01/**/*
   discard-paths: yes

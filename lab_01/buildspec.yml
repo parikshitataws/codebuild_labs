@@ -13,4 +13,3 @@ artifacts:
   files:
     - hello
   discard-paths: yes
-  base-directory: lab_01

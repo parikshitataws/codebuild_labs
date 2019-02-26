@@ -6,9 +6,9 @@ phases:
       - echo Compiling the Go code...
       - export GOOS="darwin"
       - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
-      - export GOOS="darwin"
+      - export GOOS="linux"
       - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
-      - export GOOS="darwin"
+      - export GOOS="windows"
       - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
       # - make -f lab_01/Makefile 
 artifacts:

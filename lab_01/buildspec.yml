@@ -1,16 +1,19 @@
 version: 0.2
-env:
-  parameter-store:
-    GOOS: "/codebuild-nht/goos"
 phases:
   build:    
     commands:
       - echo Build started on `date`
       - echo Compiling the Go code...
-      #- go build ./lab_01/hello.go
-      - make -f lab_01/Makefile
+      - export GOOS="darwin"
+      - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
+      - export GOOS="darwin"
+      - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
+      - export GOOS="darwin"
+      - go build -o lab_01/out/$GOOS/hello ./lab_01/hello.go 
+      # - make -f lab_01/Makefile 
 artifacts:
   files:
-    - lab_01/out/$GOOS/hello
-  discard-paths: yes
+    - '**/*'
+  base-directory: 'lab_01'
+ 
 

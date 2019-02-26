@@ -1,8 +1,8 @@
 version: 0.2
+env:
+  GOOS=darwin
 phases:
-  build:
-    env:
-      GOOS=darwin
+  build:    
     commands:
       - echo Build started on `date`
       - echo Compiling the Go code...

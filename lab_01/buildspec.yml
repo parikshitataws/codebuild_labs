@@ -1,6 +1,7 @@
 version: 0.2
 env:
-  GOOS=darwin
+  variables:
+    GOOS=darwin
 phases:
   build:    
     commands:

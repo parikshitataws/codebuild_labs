@@ -11,6 +11,6 @@ phases:
       - make -f lab_01/Makefile
 artifacts:
   files:
-    - hello
+    - lab_01/out/$GOOS/hello
   discard-paths: yes
-  base-directory: lab_01/out/$GOOS/
+
